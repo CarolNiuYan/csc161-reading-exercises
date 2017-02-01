@@ -1,0 +1,16 @@
+in the differences between short, int, float, and double. What are their minimum and maximum values? 
+
+short: provide a length of ingeters shorter than int, often is 16 bits.
+int: an integer, can be either 16 bits or 32 bits.
+float: single-precision floating point.usually 32 bits.
+double double-precision floating point.usually 64 bits.
+
+2.
+float y = (2 + 5)/2;
+the answer should be 3.000000
+because 7/2 is integer divided by integer and the result shoud also be integer, thus is 3. Then float is the type of the output number,thus int 3 needs to be convert into 3.000000 (how many zero should depend on the computer)
+
+
+3.
+x=0 because the ++ is the postfix of i, which means increment happens after the value has been used. 
+y=1 because the ++ is the prefix of j, which means that increment happens before the value has been used.
