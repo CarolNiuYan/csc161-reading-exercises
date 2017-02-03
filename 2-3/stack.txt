@@ -1,0 +1,38 @@
+the state of the computation at point A :
+Program counter 4
+
+The Stack
+=========
+--- foo
+  [x] 5
+--- main  
+  (empty)
+
+the behavior of this program:
+
+First:
+Program Counter 8
+The Stack
+=========
+--- main
+    (empty)
+
+Then:
+Program Counter 2
+The Stack
+=========
+--- foo
+   (empty)
+--- main
+   (empty)
+
+Then:
+Program Counter 3
+The Stack
+=========
+--- foo 
+  x [5]
+--- main
+  (empty)
+
+Then, when it continue to program counter5, it call foo again, which call itself again. However this recurssion will never end becuase there is not base case. Thus this program will never print out anything. And this function can never be compiled because of this.    
