@@ -1,0 +1,54 @@
+1. The guess is the main will print out 0.
+2. the program produce an output of 0.
+3. (the program counter is shown in another file called testchange.c)
+
+Program Counter: 8
+
+The Stack
+=========
+--- main
+  (empty)
+
+
+Program Counter: 9
+
+The Stack
+=========
+--- main 
+  x [0] 
+
+Program Counter: 4
+ 
+The Stack
+=========
+--- change
+  x [0]
+--- main
+  x [0]
+
+
+Program Counter: 5
+ 
+The Stack
+=========
+--- change
+  x [3]
+--- main
+  x [0]
+
+
+Program Counter: 10 
+ 
+The Stack
+=========
+--- main
+  x [0]
+
+Program Counter: 11
+ 
+The Stack      Output
+=========      ======
+----main  
+  x [0]
+
+Thus, in change, x contains value 3, there is no other effect of this assignment in change becuase there are no other outputs or functions related to this local variable, and once it comes back to main, this local variable no longer exist and x is equal to 0, as assigned in main.
