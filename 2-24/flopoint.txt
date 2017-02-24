@@ -1,0 +1,5 @@
+0100 0010 1101 1001 0000 0000 0000 0000
+the first 0 means this number is positive
+the next 8 digits are 1000 0101. In binary representation, it means 133. After subtracte 127, the exponent is 6.
+the rest digits are mantissa, which is 101 1001 0000 0000 0000 0000.The mantissa is one plus 89/128.
+Overall, the number is 217/128 * 2^6, equals 108.5.
